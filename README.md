@@ -18,10 +18,10 @@ if [[ ! ${COMMIT_MSG} =~ $PATTERN ]]; then
   exit 1
 fi -->
 
-#Connect github with jira and create commit message hook with jira ticket number
+# Connect github with jira and create commit message hook with jira ticket number
 HOOK_FILE=$1
 COMMIT_MSG=`head -n1 $HOOK_FILE`
-# PATTERN="^[A-Z][A-Z0-9]+-[0-9]+"
+<!-- # PATTERN="^[A-Z][A-Z0-9]+-[0-9]+" -->
 PATTERN="^AAUF+-[0-9]+"
 if [[ ! ${COMMIT_MSG} =~ $PATTERN ]]; then
   echo ""
