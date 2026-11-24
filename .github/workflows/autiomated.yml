@@ -28,3 +28,6 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
+      - name: run with py
+        run: |
+          py test_calculator.py
