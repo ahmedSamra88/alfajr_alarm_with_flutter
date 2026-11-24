@@ -1,5 +1,5 @@
 # alfajr_alarm_with_flutter
-An example hook script to check the commit log message.
+<!-- An example hook script to check the commit log message.
 Called by "git commit" with one argument, the name of the file
 that has the commit message. The hook should exit with non-zero
 status after issuing an appropriate message if it wants to stop the
@@ -16,4 +16,4 @@ if [[ ! ${COMMIT_MSG} =~ $PATTERN ]]; then
   echo "    example: 'AAUF-1234: my commit'"
   echo ""
   exit 1
-fi
+fi -->
