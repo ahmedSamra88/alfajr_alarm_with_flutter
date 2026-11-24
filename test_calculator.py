@@ -8,7 +8,7 @@ def test_add_numbers():
     assert calculator.add_numbers(-5, 5) == 0
     assert calculator.add_numbers(-5, -5) == -10
 
-def test_get_user_input(monkeypatch):
+def test_get_user_inputs(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: '2')
     assert calculator.get_user_input() == (2.0, 2.0)
 
