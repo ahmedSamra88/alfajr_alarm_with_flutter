@@ -30,4 +30,4 @@ jobs:
           pytest
       - name: run with py
         run: |
-          py test_calculator.py
+          python test_calculator.py
