@@ -10,7 +10,7 @@ def test_add_numbers():
 
 def test_get_user_inputs(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: '2')
-    assert calculator.get_user_input() == (2.0, 2.0)
+    assert calculator.get_user_inputs() == (2.0, 2.0)
 
     monkeypatch.setattr('builtins.input', lambda _: '-3')
-    assert calculator.get_user_input() == (-3.0, -3.0)
+    assert calculator.get_user_inputs() == (-3.0, -3.0)
